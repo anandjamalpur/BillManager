@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sunday_color">#F75152</color>
+    <color name="saturday_color">#216DDE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_disabled">#A9D0F5</color>
+    <color name="list_pressed">#FA5882</color>
+    <color name="list_focus">#CEF6CE</color>
+    <color name="list_selected">#EFF5FB</color>
+    <color name="title_bar">#212421</color>
+    <color name="common_bg">#424142</color>
+    <color name="project_bg">#E7E7E7</color>
+    <color name="week_color">#848684</color>
+    <color name="grid_bg">#4FA5D5</color>
+    <color name="grid_item_bg">#F7F7F7</color>
+    <color name="child_item_bg">#FFEFEF</color>
+</resources>

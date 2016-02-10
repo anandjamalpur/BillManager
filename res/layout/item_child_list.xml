@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="@dimen/child_date_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/black"
+        android:padding="@dimen/child_date_layout_padding" >
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/child_date"
+            android:textColor="@color/white"
+            android:textSize="@dimen/child_date_size" />
+
+        <TextView
+            android:id="@+id/weekTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTv"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/child_week"
+            android:textColor="@color/white"
+            android:textSize="@dimen/child_week_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/billLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dateLayout"
+        android:layout_toRightOf="@+id/dateLayout"
+        android:background="@color/child_item_bg"
+        android:paddingLeft="@dimen/child_bill_layout_pad_left" >
+
+        <TextView
+            android:id="@+id/bill_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/child_bill_txr_mr"
+            android:layout_toLeftOf="@+id/bill_amount_tv"
+            android:singleLine="true"
+            android:text="@string/tv_repair"
+            android:textSize="@dimen/child_bill_txt_size" />
+
+        <TextView
+            android:id="@+id/bill_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/child_bill_txr_mr"
+            android:text="@string/child_amount"
+            android:textSize="@dimen/child_bill_txt_size" />
+
+        <TextView
+            android:id="@+id/bill_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/child_bill_txr_mr"
+            android:layout_toLeftOf="@+id/statusTextView"
+            android:alpha="0.5"
+            android:singleLine="true"
+            android:text="@string/child_desc"
+            android:textSize="@dimen/child_bill_txt_size"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pay_btn_shape"
+            android:padding="5dp"
+            android:text="@string/child_status"
+            android:textSize="@dimen/child_bill_status_txt_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

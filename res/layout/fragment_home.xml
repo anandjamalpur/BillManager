@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bar" >
+
+        <TextView
+            android:id="@+id/label_payable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/label_payable"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_label_txt_size" />
+
+        <TextView
+            android:id="@+id/payable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/label_payable"
+            android:text="@string/payable"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_txt_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_range_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/label_payable"
+            android:text="@string/label_receivable"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_label_txt_size" />
+
+        <TextView
+            android:id="@+id/receivable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/date_range_textView"
+            android:layout_toRightOf="@+id/date_range_textView"
+            android:text="@string/receivable"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_txt_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/home_add_mr_top_btm"
+            android:layout_marginRight="@dimen/home_add_mr_right"
+            android:layout_marginTop="@dimen/home_add_mr_top_btm"
+            android:background="@drawable/create_contact" />
+
+        <TextView
+            android:id="@+id/recurring_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/home_add_mr_right"
+            android:layout_toLeftOf="@+id/add_button"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/r"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_rec_txt_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/monthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_title"
+        android:background="@color/common_bg" >
+
+        <Button
+            android:id="@+id/previousButton"
+            style="@style/WrapContent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/monthTextView"
+            style="@style/WrapContent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_month_txt_size" />
+
+        <Button
+            android:id="@+id/nextButton"
+            style="@style/WrapContent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/forward" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/weeksLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monthLayout"
+        android:background="#4fa5d5"
+        android:divider="@android:drawable/divider_horizontal_dim_dark"
+        android:showDividers="middle" >
+
+        <!-- android:layout_marginRight="2dp" -->
+
+        <TextView
+            style="@style/WeekLayoutStyle"
+            android:background="@color/sunday_color"
+            android:text="@string/sun"
+             />
+
+        <TextView
+            style="@style/WeekLayoutStyle"
+            android:background="@color/week_color"
+            android:text="@string/mon" />
+
+        <TextView
+            style="@style/WeekLayoutStyle"
+            android:background="@color/week_color"
+            android:text="@string/tue" />
+
+        <TextView
+            style="@style/WeekLayoutStyle"
+            android:background="@color/week_color"
+            android:text="@string/wed" />
+
+        <TextView
+            style="@style/WeekLayoutStyle"
+            android:background="@color/week_color"
+            android:text="@string/thu" />
+
+        <TextView
+            style="@style/WeekLayoutStyle"
+            android:background="@color/week_color"
+            android:text="@string/fri" />
+
+        <TextView
+            style="@style/WeekLayoutStyle"
+            android:background="@color/saturday_color"
+            android:text="@string/sat" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calenderGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/weeksLayout"
+        android:layout_below="@+id/weeksLayout"
+        android:layout_marginRight="@dimen/home_grid_mr_right"
+        android:background="@color/grid_bg"
+        android:horizontalSpacing="@dimen/home_grid_hr_spacing"
+        android:listSelector="@drawable/grid_selector"
+        android:numColumns="7"
+        android:paddingBottom="@dimen/home_grid_pad_bottom"
+        android:verticalSpacing="@dimen/home_grid_vr_spacing" >
+    </GridView>
+<!--         android:drawSelectorOnTop="true" -->
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calenderGridView"
+        android:background="@color/common_bg"
+        android:paddingBottom="@dimen/home_date_tv_pad_top_btm"
+        android:paddingLeft="@dimen/home_date_tv_pad_lr"
+        android:paddingRight="@dimen/home_date_tv_pad_lr"
+        android:paddingTop="@dimen/home_date_tv_pad_top_btm"
+        android:text="@string/date"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_date_tv_size" />
+
+    <ListView
+        android:id="@+id/todayListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dateTextView"
+        android:clickable="false"
+        android:fastScrollEnabled="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+    </ListView>
+
+</RelativeLayout>

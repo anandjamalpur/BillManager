@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_bg"
+    tools:context=".RecurringActivity" >
+
+    <RelativeLayout
+        android:id="@+id/recurring_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bar" >
+
+        <ImageView
+            android:id="@+id/add_button"
+            style="@style/WrapContent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/recur_add_btn_mr"
+            android:layout_marginRight="@dimen/recur_add_btn_mr"
+            android:layout_marginTop="@dimen/recur_add_btn_mr"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/create_contact" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/WrapContent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/recur_title_tv_mr_left"
+            android:text="@string/recurring_bills"
+            android:textColor="@color/white"
+            android:textSize="@dimen/recur_title_tv_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/recurringListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:fastScrollEnabled="true"
+        android:layout_below="@+id/recurring_title"
+        android:layout_margin="@dimen/recur_list_margin" >
+    </ListView>
+
+</RelativeLayout>

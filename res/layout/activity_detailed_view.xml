@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_bg"
+    tools:context=".DetailedViewActivity" >
+
+    <RelativeLayout
+        android:id="@+id/detailed_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Detailed View"
+            android:textColor="@color/white"
+            android:textSize="@dimen/add_title_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailed_view_title"
+        android:layout_marginLeft="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/innerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/label_name_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/detailed_view_title"
+                android:text="@string/name_" />
+
+            <TextView
+                android:id="@+id/label_type_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/label_name_textView"
+                android:text="@string/type_" />
+
+            <TextView
+                android:id="@+id/label_category_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/label_type_textView"
+                android:text="@string/category_" />
+
+            <TextView
+                android:id="@+id/label_recursion_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/label_category_textView"
+                android:text="@string/recursionn_" />
+
+            <TextView
+                android:id="@+id/label_recursion_period_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/label_recursion_textView"
+                android:text="@string/period_" />
+
+            <TextView
+                android:id="@+id/label_start_date_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/label_recursion_period_textView"
+                android:text="@string/start_date_" />
+
+            <TextView
+                android:id="@+id/label_end_date_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/label_start_date_textView"
+                android:text="@string/end_date_" />
+
+            <TextView
+                android:id="@+id/label_desc_textView"
+                style="@style/DetailLableStyle"
+                android:layout_below="@+id/label_end_date_textView"
+                android:text="@string/description" />
+
+            <View
+                android:id="@+id/dummy"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/name_textView"
+                style="@style/DetailedViewTextStyle"
+                android:text="@string/movie" />
+
+            <TextView
+                android:id="@+id/type_textView"
+                style="@style/DetailedViewTextStyle"
+                android:layout_below="@+id/name_textView"
+                android:text="@string/payable" />
+
+            <TextView
+                android:id="@+id/category_textView"
+                style="@style/DetailedViewTextStyle"
+                android:layout_below="@+id/type_textView"
+                android:text="@string/entertainment" />
+
+            <TextView
+                android:id="@+id/recursion_textView"
+                style="@style/DetailedViewTextStyle"
+                android:layout_below="@+id/category_textView"
+                android:text="@string/yes" />
+
+            <TextView
+                android:id="@+id/period_textView"
+                style="@style/DetailedViewTextStyle"
+                android:layout_below="@+id/recursion_textView"
+                android:text="@string/weekly" />
+
+            <TextView
+                android:id="@+id/start_date_textView"
+                style="@style/DetailedViewTextStyle"
+                android:layout_below="@+id/period_textView"
+                android:text="@string/_15_07_2014" />
+
+            <TextView
+                android:id="@+id/end_date_textView"
+                style="@style/DetailedViewTextStyle"
+                android:layout_below="@+id/start_date_textView"
+                android:text="@string/_15_08_2014" />
+
+            <TextView
+                android:id="@+id/desc_textView"
+                style="@style/DetailedViewTextStyle"
+                android:layout_below="@+id/end_date_textView"
+                android:text="@string/this_is_dummy_description" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

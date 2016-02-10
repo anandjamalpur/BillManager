@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_bg"
+    tools:context=".ReportsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/reports_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:background="@color/title_bar" >
+
+        <TextView
+            android:id="@+id/label_payable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/reports_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_txt_size" />
+
+        <TextView
+            android:id="@+id/date_range_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/label_payable"
+            android:text="@string/date_range"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_txt_size" />
+
+        <ImageView
+            android:id="@+id/pieChartImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/pie" />
+
+        <TextView
+            android:id="@+id/pieBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_alignLeft="@+id/pieChartImageView"
+            android:layout_alignRight="@+id/pieChartImageView"
+            android:layout_below="@+id/pieChartImageView"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/barChartImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pieChartImageView"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/pieChartImageView"
+            android:contentDescription="@string/app_name"
+            android:padding="6dp"
+            android:src="@drawable/bar" />
+
+        <TextView
+            android:id="@+id/barBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_alignLeft="@+id/barChartImageView"
+            android:layout_alignRight="@+id/barChartImageView"
+            android:layout_below="@+id/barChartImageView"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/select_date_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/barChartImageView"
+            android:contentDescription="@string/app_name"
+            android:src="@android:drawable/ic_menu_my_calendar" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerLayout"
+        android:layout_below="@+id/reports_title" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_bg"
+        android:divider="@android:drawable/divider_horizontal_dim_dark"
+        android:paddingTop="2dp"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/all_textView"
+            style="@style/ReportsFooterStyle"
+            android:text="@string/all" />
+
+        <TextView
+            android:id="@+id/paid_textView"
+            style="@style/ReportsFooterStyle"
+            android:text="@string/paid" />
+
+        <TextView
+            android:id="@+id/unpaid_textview"
+            style="@style/ReportsFooterStyle"
+            android:text="@string/unpaid" />
+    </LinearLayout>
+
+</RelativeLayout>

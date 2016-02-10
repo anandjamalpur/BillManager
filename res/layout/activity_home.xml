@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity" >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerLayout" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_bg"
+        android:divider="@android:drawable/divider_horizontal_dim_dark"
+        android:paddingTop="@dimen/home_footer_pad_top"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/calender"
+            style="@style/FooterLayoutStyle"
+            android:drawableTop="@android:drawable/ic_menu_my_calendar"
+            android:text="@string/calender" />
+
+        <TextView
+            android:id="@+id/list"
+            style="@style/FooterLayoutStyle"
+            android:drawableTop="@android:drawable/ic_menu_sort_by_size"
+            android:text="@string/list" />
+
+        <TextView
+            android:id="@+id/overview"
+            style="@style/FooterLayoutStyle"
+            android:drawableTop="@android:drawable/ic_menu_view"
+            android:text="@string/overview" />
+
+        <TextView
+            android:id="@+id/reports"
+            style="@style/FooterLayoutStyle"
+            android:drawableTop="@android:drawable/ic_menu_report_image"
+            android:text="@string/reports" />
+
+        <TextView
+            android:id="@+id/more"
+            style="@style/FooterLayoutStyle"
+            android:drawableTop="@android:drawable/ic_menu_more"
+            android:text="@string/more" />
+    </LinearLayout>
+
+</RelativeLayout>

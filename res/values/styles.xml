@@ -1,0 +1,103 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- For the resting Spinner style -->
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+
+        <!-- For each individual Spinner list item once clicked on -->
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItemStyle</item>
+    </style>
+
+    <style name="MatchParent" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapContent" parent="@style/AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AddLableStyle" parent="@style/AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">@dimen/add_label_txt_size</item>
+        <item name="android:layout_marginTop">@dimen/add_item_mr_top</item>
+    </style>
+
+    <style name="DetailLableStyle" parent="@style/AddLableStyle">
+        <item name="android:layout_marginTop">@dimen/detail_view_txt_mr_top</item>
+    </style>
+
+    <style name="DetailedViewTextStyle" parent="@style/WrapContent">
+        <item name="android:layout_alignParentLeft">false</item>
+        <item name="android:layout_alignLeft">@+id/dummy</item>
+        <item name="android:layout_marginTop">@dimen/detail_view_txt_mr_top</item>
+        <item name="android:textSize">@dimen/add_label_txt_size</item>
+    </style>
+
+    <style name="AddEditTextStyle" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">@dimen/add_label_txt_size</item>
+        <item name="android:background">@drawable/editbox_selector</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="FooterLayoutStyle" parent="@style/AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/footer_item_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/home_footer_txt_size</item>
+    </style>
+
+    <style name="ReportsFooterStyle" parent="@style/AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/footer_item_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/report_footer_txt_padding</item>
+        <item name="android:paddingTop">@dimen/report_footer_txt_padding</item>
+        <item name="android:textSize">@dimen/report_footer_txt_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="WeekLayoutStyle" parent="@style/AppTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/home_week_txt_size</item>
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:textSize">@dimen/add_label_txt_size</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:textSize">@dimen/add_label_txt_size</item>
+    </style>
+
+</resources>

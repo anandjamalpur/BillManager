@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/billNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/tv_repain_other"
+        android:textSize="@dimen/home_list_top_txt_size" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/_10_99"
+        android:textSize="@dimen/home_list_top_txt_size" />
+
+    <TextView
+        android:id="@+id/paidDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/billNameTextView"
+        android:text="@string/paid_on_tue_10_29_2013"
+        android:textSize="@dimen/home_list_bottom_txt_size" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/paidDateTextView"
+        android:layout_below="@+id/amountTextView"
+        android:background="@drawable/pay_btn_shape"
+        android:padding="5dp"
+        android:text="@string/mark_as_paid"
+        android:textSize="@dimen/home_list_bottom_txt_size" />
+
+</RelativeLayout>

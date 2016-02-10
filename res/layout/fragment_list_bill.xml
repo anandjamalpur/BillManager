@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_bg" >
+
+    <RelativeLayout
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bar" >
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/home_add_mr_top_btm"
+            android:layout_marginRight="@dimen/home_add_mr_right"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/home_add_mr_top_btm"
+            android:background="@drawable/create_contact" />
+
+        <TextView
+            android:id="@+id/recurring_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/home_add_mr_right"
+            android:layout_toLeftOf="@+id/add_button"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/r"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_rec_txt_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/home_add_mr_right"
+            android:layout_toLeftOf="@+id/recurring_textview"
+            android:background="@drawable/sort" />
+
+        <RelativeLayout
+            android:id="@+id/monthSelectLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/sortButton" >
+
+            <Button
+                android:id="@+id/previousButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/forward" />
+
+            <TextView
+                android:id="@+id/month_year_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/previousButton"
+                android:layout_alignBottom="@+id/previousButton"
+                android:layout_centerHorizontal="true"
+                android:text="@string/month_year"
+                android:textColor="@color/white"
+                android:textSize="@dimen/list_month_date_tv_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/parentBillsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/list_title"
+        android:layout_margin="@dimen/list_mr_left" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,323 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParent"
+    android:background="@color/project_bg"
+    tools:context=".AddBillActivity" >
+
+    <RelativeLayout
+        android:id="@+id/add_bill_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_bill"
+            android:textColor="@color/white"
+            android:textSize="@dimen/add_title_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_bill_title"
+        android:scrollbars="@null"
+        android:layout_margin="@dimen/add_scroll_margin" >
+
+        <RelativeLayout
+            android:id="@+id/addBillLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/label_name_textView1"
+                    style="@style/AddLableStyle"
+                    android:text="@string/bill_name_" />
+
+                <EditText
+                    android:id="@+id/billNameEditText"
+                    style="@style/AddEditTextStyle"
+                    android:inputType="text" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <!-- #E6F1F6 -->
+
+            <LinearLayout
+                android:id="@+id/categoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/label_category_textView"
+                    style="@style/AddLableStyle"
+                    android:text="@string/bill_category_" />
+
+                <Spinner
+                    android:id="@+id/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/typeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoryLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/label_bill_type"
+                    style="@style/AddLableStyle"
+                    android:text="@string/bill_type_" />
+
+                <RadioGroup
+                    android:id="@+id/billTypeRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/payableRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/add_payable"
+                        android:textSize="@dimen/add_label_txt_size" />
+
+                    <RadioButton
+                        android:id="@+id/receivableRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addreceivable"
+                        android:textSize="@dimen/add_label_txt_size" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/amountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typeLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/label_bill_amount"
+                    style="@style/AddLableStyle"
+                    android:text="@string/amount_" />
+
+                <EditText
+                    android:id="@+id/amountEditText"
+                    style="@style/AddEditTextStyle"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/descLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amountLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/label_bill_desc"
+                    style="@style/AddLableStyle"
+                    android:text="@string/description_" />
+
+                <EditText
+                    android:id="@+id/descEditText"
+                    style="@style/AddEditTextStyle"
+                    android:inputType="textCapSentences" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recursionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/label_recurssive"
+                    style="@style/AddLableStyle"
+                    android:text="@string/recursion_" />
+
+                <RadioGroup
+                    android:id="@+id/recursionRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/yesRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:textSize="@dimen/add_label_txt_size" />
+
+                    <RadioButton
+                        android:id="@+id/noRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/no"
+                        android:textSize="@dimen/add_label_txt_size" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recursionPeriodLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recursionLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/label_recurssion_period"
+                    style="@style/AddLableStyle"
+                    android:text="@string/recursion_period_"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/recurssionSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/recurssion_category"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/startDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recursionPeriodLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/label_start_date"
+                    style="@style/AddLableStyle"
+                    android:text="@string/bill_start_date_"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/start_dateEditText"
+                    style="@style/AddEditTextStyle"
+                    android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:visibility="gone"
+                    tools:ignore="Deprecated" />
+
+                <!--
+                     <ImageView
+                    android:id="@+id/dateImageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_my_calendar"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone" />
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/endDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/startDateLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/add_items_shape"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/label_end_date"
+                    style="@style/AddLableStyle"
+                    android:text="@string/bill_date_" />
+
+                <EditText
+                    android:id="@+id/end_dateEditText"
+                    style="@style/AddEditTextStyle"
+                    android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                    android:editable="false"
+                    android:inputType="none"
+                    tools:ignore="Deprecated" />
+                <!--
+                <ImageView
+                    android:id="@+id/dateImageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/ic_menu_my_calendar"
+                    android:contentDescription="@string/app_name" />
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/endDateLayout"
+                android:layout_marginTop="@dimen/add_item_mr_top"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    style="@style/WrapContent"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/add_items_shape"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/add_label_txt_size" />
+
+                <Button
+                    android:id="@+id/submitButton"
+                    style="@style/WrapContent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/add_items_shape"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/submit"
+                    android:textSize="@dimen/add_label_txt_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

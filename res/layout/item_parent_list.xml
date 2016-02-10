@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/item_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#424142"
+        android:paddingBottom="@dimen/parent_pad_bt"
+        android:paddingLeft="@dimen/parent_pad_lr"
+        android:paddingRight="@dimen/parent_pad_lr"
+        android:paddingTop="@dimen/parent_pad_bt" >
+
+        <!-- android:layout_marginTop="10dp" -->
+
+        <TextView
+            android:id="@+id/bill_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/parent_head"
+            android:textColor="@color/white"
+            android:textSize="@dimen/parent_head_name_txt_size" />
+
+        <TextView
+            android:id="@+id/num_record_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/num_records"
+            android:textColor="@color/white"
+            android:textSize="@dimen/parent_head_records_txt_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_title2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title_layout"
+        android:background="#424142" >
+
+        <TextView
+            android:id="@+id/payable_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/parent_amount_pad_top_bottom"
+            android:paddingTop="@dimen/parent_amount_pad_top_bottom"
+            android:text="@string/payable_amt"
+            android:textColor="#F75552"
+            android:textSize="@dimen/parent_head_records_txt_size" />
+
+        <TextView
+            android:id="@+id/receivable_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/parent_amount_pad_top_bottom"
+            android:paddingTop="@dimen/parent_amount_pad_top_bottom"
+            android:text="@string/receivable_amt"
+            android:textColor="#F75552"
+            android:textSize="@dimen/parent_head_records_txt_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/child_Bills_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/item_title2_layout" >
+    </ListView>
+
+</RelativeLayout>

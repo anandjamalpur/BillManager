@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.afbb.billmanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.afbb.utill.GlobalData"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.afbb.billmanager.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.afbb.billmanager.AddBillActivity"
+            android:label="@string/title_activity_add_bill" >
+        </activity>
+        <activity
+            android:name="com.afbb.billmanager.ReportsActivity"
+            android:label="@string/title_activity_reports" >
+        </activity>
+        <activity
+            android:name="com.afbb.billmanager.RecurringActivity"
+            android:label="@string/title_activity_recurring" >
+        </activity>
+        <activity
+            android:name="com.afbb.billmanager.DetailedViewActivity"
+            android:label="@string/title_activity_detailed_view" >
+        </activity>
+        <activity
+            android:name="com.afbb.billmanager.CategoriesActivity"
+            android:label="@string/title_activity_categories" >
+        </activity>
+    </application>
+
+</manifest>

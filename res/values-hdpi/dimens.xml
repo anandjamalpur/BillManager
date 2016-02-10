@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- Home Activity -->
+    <dimen name="home_footer_txt_size">12sp</dimen>
+
+    <!-- Home fragment title -->
+    <dimen name="home_label_txt_size">12sp</dimen>
+    <dimen name="home_txt_size">14sp</dimen>
+    <dimen name="home_add_mr_top_btm">5dp</dimen>
+    <dimen name="home_add_mr_right">10dp</dimen>
+    <dimen name="home_rec_txt_size">30sp</dimen>
+
+    <!-- Home fragment -->
+
+    <dimen name="home_grid_mr_right">-2.2dp</dimen>
+    <dimen name="home_grid_hr_spacing">1dp</dimen>
+    <dimen name="home_grid_vr_spacing">1dp</dimen>
+    <dimen name="home_grid_pad_bottom">0.5dp</dimen>
+    <dimen name="home_date_tv_pad_top_btm">4dp</dimen>
+    <dimen name="home_date_tv_pad_lr">30dp</dimen>
+    <dimen name="home_date_tv_size">16sp</dimen>
+    <dimen name="home_month_txt_size">16sp</dimen>
+    <dimen name="home_week_txt_size">16sp</dimen>
+
+    <!-- AddBillActivity -->
+    <dimen name="add_scroll_margin">10dp</dimen>
+    <dimen name="add_title_size">30sp</dimen>
+    <dimen name="add_label_txt_size">16sp</dimen>
+    <dimen name="add_item_mr_top">10dp</dimen>
+
+    <!-- HomeActivity -->
+    <dimen name="home_footer_pad_top">2dp</dimen>
+
+    <!-- RecurringActivity -->
+    <dimen name="recur_add_btn_mr">10dp</dimen>
+    <dimen name="recur_title_tv_size">20sp</dimen>
+    <dimen name="recur_title_tv_mr_left">10dp</dimen>
+    <dimen name="recur_list_margin">10dp</dimen>
+
+    <!-- Recurring Item -->
+    <dimen name="rec_name_txt_size">16sp</dimen>
+    <dimen name="rec_details_txt_size">14sp</dimen>
+
+    <!-- BarChartFragment -->
+    <dimen name="bar_list_mr_left">10dp</dimen>
+    <dimen name="bar_list_mr_top">10dp</dimen>
+
+    <!-- ListBillFragment -->
+    <dimen name="list_month_date_tv_size">20sp</dimen>
+    <dimen name="list_mr_left">10dp</dimen>
+
+    <!-- Grid item -->
+    <dimen name="grid_item_width">10dp</dimen>
+    <dimen name="grid_item_height">10dp</dimen>
+    <dimen name="grid_item_txt_size">16sp</dimen>
+
+    <!-- HomeList item -->
+    <dimen name="home_list_top_txt_size">16sp</dimen>
+    <dimen name="home_list_bottom_txt_size">12sp</dimen>
+
+    <!-- Parent item -->
+    <dimen name="parent_pad_lr">5dp</dimen>
+    <dimen name="parent_pad_bt">4dp</dimen>
+    <dimen name="parent_head_name_txt_size">20sp</dimen>
+    <dimen name="parent_head_records_txt_size">16sp</dimen>
+    <dimen name="parent_amount_pad_top_bottom">4dp</dimen>
+
+    <!-- Bar Chart item -->
+    <dimen name="bar_text_size">16sp</dimen>
+    <dimen name="bar_mr_top">5dp</dimen>
+    <dimen name="bar_mr_btm">10dp</dimen>
+
+    <!-- Child item -->
+    <dimen name="child_date_layout_width">50dp</dimen>
+    <dimen name="child_date_layout_padding">5dp</dimen>
+    <dimen name="child_date_size">30sp</dimen>
+    <dimen name="child_week_size">14sp</dimen>
+    <dimen name="child_bill_layout_pad_left">5dp</dimen>
+    <dimen name="child_bill_txt_size">18sp</dimen>
+    <dimen name="child_bill_status_txt_size">12sp</dimen>
+    <dimen name="child_bill_txr_mr">5dp</dimen>
+
+    <!-- Detailed View -->
+    <dimen name="detail_view_txt_mr_top">20dp</dimen>
+
+    <!-- Report Date Selection -->
+    <dimen name="report_dialog_title_mr">20dp</dimen>
+    <dimen name="report_dialog_title_txt_size">20sp</dimen>
+    <dimen name="report_footer_txt_size">12sp</dimen>
+    <dimen name="report_footer_txt_padding">10dp</dimen>
+
+</resources>

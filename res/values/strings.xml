@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bill Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="month">Oct, 2013</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="date">Monday, 10/28/2013</string>
+    <string name="label_payable">Payable</string>
+    <string name="payable">Payable</string>
+    <string name="label_receivable">Receivable</string>
+    <string name="receivable">$551.99</string>
+    <string name="r">R</string>
+    <string name="title_activity_add_bill">AddBillActivity</string>
+    <string name="calender">Calender</string>
+    <string name="list">List</string>
+    <string name="overview">Overview</string>
+    <string name="reports">Reports</string>
+    <string name="more">More</string>
+    <string name="add_bill">Add Bill</string>
+
+    <string-array name="recurssion_category">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Half Yearly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string name="title_activity_reports">ReportsActivity</string>
+    <string name="title_activity_recurring">RecurringActivity</string>
+    <string name="bill_name_">Bill Name:</string>
+    <string name="bill_category_">Bill Category:</string>
+    <string name="bill_type_">Bill Type:</string>
+    <string name="add_payable">Payable</string>
+    <string name="addreceivable">Receivable</string>
+    <string name="amount_">Amount:</string>
+    <string name="description_">Description:</string>
+    <string name="recursion_">Recursion:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="recursion_period_">Recursion Period:</string>
+    <string name="bill_start_date_">Bill Start Date:</string>
+    <string name="bill_date_">Bill date:</string>
+    <string name="recurring_bills">Recurring Bills</string>
+    <string name="reports_title">Reports</string>
+    <string name="date_range">10/01/2013-10/31/2013</string>
+    <string name="all">ALL</string>
+    <string name="paid">PAID</string>
+    <string name="unpaid">UNPAID</string>
+    <string name="month_year">Oct, 2013</string>
+    <string name="item_date">16</string>
+    <string name="bar_price">Entertainment $ 135.90 (44%)</string>
+    <string name="child_date">21</string>
+    <string name="child_week">Mon</string>
+    <string name="tv_repair">tv repair</string>
+    <string name="child_amount">$15.90</string>
+    <string name="child_desc">repair LED</string>
+    <string name="child_status">Mark as paid</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="bill_end_date">Bill End Date</string>
+    <string name="title_activity_detailed_view">DetailedViewActivity</string>
+    <string name="name_">Name:</string>
+    <string name="type_">Type:</string>
+    <string name="category_">Category:</string>
+    <string name="recursionn_">Recursion:</string>
+    <string name="period_">Period:</string>
+    <string name="start_date_">Start Date:</string>
+    <string name="description">Description:</string>
+    <string name="movie">Movie</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="weekly">Weekly</string>
+    <string name="_15_07_2014">15/07/2014</string>
+    <string name="_15_08_2014">15/08/2014</string>
+    <string name="this_is_dummy_description">This is dummy description</string>
+    <string name="end_date_">End Date:</string>
+    <string name="tv_repain_other">TV repain : Other</string>
+    <string name="_10_99">$10.99</string>
+    <string name="paid_on_tue_10_29_2013">Paid on Tue, 10/29/2013</string>
+    <string name="mark_as_paid">Mark as paid</string>
+    <string name="parent_head">Overdue Bills</string>
+    <string name="num_records">&amp;apos;1 Record&amp;apos;</string>
+    <string name="payable_amt">Payable: $15.90</string>
+    <string name="receivable_amt">Receivable: $0.00</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="taxi_fare_transportation">taxi fare : Transportation</string>
+    <string name="amount">$10.99</string>
+    <string name="period">Every 2 days</string>
+    <string name="date_period">Mon, 10/28/2013 - Thu, 11/28/2013</string>
+    <string name="rec_description">taxi fare from home to tution</string>
+    <string name="empty_msg">No data to show!!!</string>
+    <string name="settings_title">Settings</string>
+    <string name="categories">Categories</string>
+    <string name="title_activity_categories">CategoriesActivity</string>
+    <string name="categories_list_title">Categories List</string>
+    <string name="category_name">Entertainment</string>
+    <string name="label_category_name">Category Name</string>
+    <string name="label_select_color">Select color</string>
+    <string name="your_color">Your color</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+
+
+</resources>
